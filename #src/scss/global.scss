@@ -1,0 +1,144 @@
+$font-montserrat: 'Montserrat', sans-serif;
+$color-black: #0E0E0E;
+$color-black-black: #000000;
+$color-white: #ffffff;
+$color-blue: #005395;
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1 0 auto;
+  height: calc(100% - 288px - 80px);
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+body {
+  font-family: $font-montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  max-width: 1302px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: $color-black;
+
+  @media (max-width: 991px) {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.mt-80 {
+  margin-top: 80px;
+
+  @media (max-width: 991px) {
+    margin-top: 62px;
+  }
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  padding: 17px 62px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-blue;
+  background-color: transparent;
+  border: 1px solid #005395;
+  border-radius: 8px;
+  transition: all linear 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 83, 149, 0.67);
+    border: 1px solid rgba(0, 83, 149, 0.67);
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $color-blue;
+  }
+
+  @media (max-width: 580px) {
+    width: 100%;
+    padding: 12px 16px;
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-black-black;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

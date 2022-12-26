@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/virtual-select.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>title</title>
+</head>
+
+<body>
+  <!-- На wrapper добавлять класс index для страниц типа главной, шапка будет прозрачной, на абсолюте и т.д. -->
+  <div class="wrapper @@class">
+    <div class="content">
+      <header class="header">
+        <div class="container header__wrapper">
+          <a href="/" class="logo">
+            <img src="img/logo.png" alt="" class="logo__img">
+          </a>
+
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
+              <li class="menu__item"><a href="about.html" class="menu__link">О КОМПАНИИ</a></li>
+              <li class="menu__item"><a href="news.html" class="menu__link">НОВОСТИ И СТАТЬИ</a></li>
+              <li class="menu__item"><a href="contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+
+          <div class="burger js-burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main">
+        <!-- Шапка -->
+
+<section class="container">
+  <div class="breadcrumbs">
+    <a href="" class="breadcrumbs__item"><span>Главная</span></a>
+    <div class="breadcrumbs__item">Контакты</div>
+  </div>
+
+  <h2 class="title">Контакты</h2>
+
+  <div class="map">
+
+  </div>
+
+  <div class="contacts">
+    <button type="button" class="contacts__btn btn js-modal-trigger" data-modal="order">Оставить заявку</button>
+
+    <div class="contacts__item">
+      <b>ООО «ПринтАтелье»</b>
+    </div>
+
+    <div class="contacts__item">
+      <b>ИНН:</b>
+      3906388050
+    </div>
+
+    <div class="contacts__item mt-0">
+      <b>КПП:</b>
+      390601001
+    </div>
+
+    <div class="contacts__item mt-0">
+      <b>ОГРН:</b>
+      1203900001051
+    </div>
+
+    <div class="contacts__item">
+      <b>Юридический адрес:</b>
+      Россия, 236034, Калининградская обл., г. Калининград, ул. И. Земнухова, д. 8, кв. 26
+    </div>
+
+    <div class="contacts__item">
+      <b>Фактический адрес:</b>
+      Россия, 236034, Калининградская обл., г. Калининград, ул. Дзержинского, д. 130
+    </div>
+
+    <div class="contacts__item">
+      <b>Телефон:</b>
+      +7(4012)733-531
+    </div>
+
+    <div class="contacts__item">
+      <b>Эл. почта:</b>
+      print-a39@yandex.ru
+    </div>
+
+    <div class="contacts__item">
+      <b>Расчетный счет:</b>
+      40702810075000001342
+    </div>
+
+    <div class="contacts__item mt-0">
+      <b>Банк:</b>
+      Филиал «ЕВРОПЕЙСКИЙ» ПАО «БАНК «САНКТ-ПЕТЕРБУРГ»
+    </div>
+
+    <div class="contacts__item mt-0">
+      <b>Корр. счет:</b>
+      30101810927480000877
+    </div>
+
+    <div class="contacts__item mt-0">
+      <b>БИК:</b>
+      042748877
+    </div>
+
+    <div class="contacts__item">
+      <b>Директор:</b>
+      Сакович Екатерина Евгеньевна
+    </div>
+  </div>
+</section>
+
+<!-- Модалки -->
+<div class="modal js-modal" data-modal="order">
+  <div class="modal__bg js-modal-bg"></div>
+
+  <div class="modal__wrapper">
+    <div class="modal__container">
+      <div class="modal__close js-modal-close">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.76533 8.5L16.174 0.86084C16.2814 0.733887 16.1911 0.541016 16.0251 0.541016H14.0769C13.9621 0.541016 13.8522 0.592285 13.7766 0.680176L8.49092 6.98145L3.20527 0.680176C3.13203 0.592285 3.02217 0.541016 2.90498 0.541016H0.956739C0.790723 0.541016 0.700391 0.733887 0.807813 0.86084L7.2165 8.5L0.807813 16.1392C0.783749 16.1675 0.768312 16.2021 0.763332 16.2389C0.758352 16.2757 0.76404 16.3132 0.77972 16.3468C0.795401 16.3805 0.820415 16.409 0.851792 16.4288C0.88317 16.4487 0.919594 16.4592 0.956739 16.459H2.90498C3.01973 16.459 3.12959 16.4077 3.20527 16.3198L8.49092 10.0186L13.7766 16.3198C13.8498 16.4077 13.9597 16.459 14.0769 16.459H16.0251C16.1911 16.459 16.2814 16.2661 16.174 16.1392L9.76533 8.5Z" fill="black" />
+        </svg>
+      </div>
+
+      <div class="calculator">
+        <h2 class="title">Оставить заявку</h2>
+
+        <div class="calculator__right">
+          <div class="input-wrapper">
+            <label class="label">
+              <input type="text" class="input" placeholder="Имя*" required>
+              <div class="input__title">Имя*</div>
+            </label>
+            <label class="label">
+              <input type="email" class="input" placeholder="E-mail">
+              <div class="input__title">E-mail</div>
+            </label>
+            <label class="label">
+              <input type="tel" class="input" placeholder="Контактный телефон*" required>
+              <div class="input__title">Контактный телефон*</div>
+            </label>
+          </div>
+
+          <label class="label">
+            <textarea class="input input-textarea" placeholder="Комментарий"></textarea>
+            <div class="input__title">Комментарий</div>
+          </label>
+
+          <div class="agreement">
+            <label class="agreement__label">
+              <input type="checkbox" class="agreement__input" required>
+              <div class="agreement__box">
+                <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.2616 2.12117C16.6522 1.73064 16.6522 1.09748 16.2616 0.706956C15.8711 0.316431 15.238 0.316431 14.8474 0.706956L4.94794 10.6065C4.55741 10.997 4.55741 11.6301 4.94794 12.0207C5.33846 12.4112 5.97163 12.4112 6.36215 12.0207L16.2616 2.12117Z" fill="white" />
+                  <path d="M0.707108 7.7784C0.316584 7.38787 0.316584 6.75471 0.707108 6.36418C1.09763 5.97366 1.7308 5.97366 2.12132 6.36418L6.36396 10.6068C6.75449 10.9973 6.75449 11.6305 6.36396 12.021C5.97344 12.4116 5.34027 12.4116 4.94975 12.021L0.707108 7.7784Z" fill="white" />
+                </svg>
+              </div>
+            </label>
+            <div class="agreement__text">
+              Я прочитал и принимаю условия
+              <a href="" class="agreement__link">Соглашения об обработке персональных данных</a>
+            </div>
+          </div>
+
+          <button type="submit" class="btn calculator__btn">Отправить</button>
+        </div>
+
+        <div class="calculator__img" style="background-image: url('img/order.jpg');"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_mess js-modal" data-modal="">
+  <div class="modal__bg js-modal-bg"></div>
+
+  <div class="modal__wrapper">
+    <div class="modal__container">
+      <div class="modal__close js-modal-close">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.76533 8.5L16.174 0.86084C16.2814 0.733887 16.1911 0.541016 16.0251 0.541016H14.0769C13.9621 0.541016 13.8522 0.592285 13.7766 0.680176L8.49092 6.98145L3.20527 0.680176C3.13203 0.592285 3.02217 0.541016 2.90498 0.541016H0.956739C0.790723 0.541016 0.700391 0.733887 0.807813 0.86084L7.2165 8.5L0.807813 16.1392C0.783749 16.1675 0.768312 16.2021 0.763332 16.2389C0.758352 16.2757 0.76404 16.3132 0.77972 16.3468C0.795401 16.3805 0.820415 16.409 0.851792 16.4288C0.88317 16.4487 0.919594 16.4592 0.956739 16.459H2.90498C3.01973 16.459 3.12959 16.4077 3.20527 16.3198L8.49092 10.0186L13.7766 16.3198C13.8498 16.4077 13.9597 16.459 14.0769 16.459H16.0251C16.1911 16.459 16.2814 16.2661 16.174 16.1392L9.76533 8.5Z" fill="black" />
+        </svg>
+      </div>
+
+      <div class="modal__title">
+        Ваша заявка принята, в ближайшее время с вами свяжется наш специалист
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Подвал -->
+</div>
+</div>
+
+<footer class="footer mt-80">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__col">
+        <h2 class="footer__title">ООО “ПРИНТАТЕЛЬЕ”</h2>
+        <div class="footer__copyright">© 2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
+      </div>
+      <div class="footer__col">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="catalog.html" class="footer__link">каталог</a>
+          </li>
+          <li class="footer__item">
+            <a href="about.html" class="footer__link">О КОМПАНИИ</a>
+          </li>
+          <li class="footer__item">
+            <a href="news.html" class="footer__link">НОВОСТИ И СТАТЬИ</a>
+          </li>
+          <li class="footer__item">
+            <a href="contacts.html" class="footer__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__subtitle">ОТДЕЛ ПРОДАЖ</div>
+        <div class="contact">
+          <div class="contact__icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.6467 12.22C14.6467 12.46 14.5933 12.7067 14.48 12.9467C14.3667 13.1867 14.22 13.4133 14.0267 13.6267C13.7 13.9867 13.34 14.2467 12.9333 14.4133C12.5333 14.58 12.1 14.6667 11.6333 14.6667C10.9533 14.6667 10.2267 14.5067 9.46 14.18C8.69334 13.8533 7.92667 13.4133 7.16667 12.86C6.4 12.3 5.67334 11.68 4.98 10.9933C4.29334 10.3 3.67334 9.57334 3.12 8.81334C2.57334 8.05334 2.13334 7.29334 1.81334 6.54C1.49334 5.78 1.33334 5.05334 1.33334 4.36C1.33334 3.90667 1.41334 3.47334 1.57334 3.07334C1.73334 2.66667 1.98667 2.29334 2.34 1.96C2.76667 1.54 3.23334 1.33334 3.72667 1.33334C3.91334 1.33334 4.1 1.37334 4.26667 1.45334C4.44 1.53334 4.59334 1.65334 4.71334 1.82667L6.26 4.00667C6.38 4.17334 6.46667 4.32667 6.52667 4.47334C6.58667 4.61334 6.62 4.75334 6.62 4.88C6.62 5.04 6.57334 5.2 6.48 5.35334C6.39334 5.50667 6.26667 5.66667 6.10667 5.82667L5.6 6.35334C5.52667 6.42667 5.49334 6.51334 5.49334 6.62C5.49334 6.67334 5.5 6.72 5.51334 6.77334C5.53334 6.82667 5.55334 6.86667 5.56667 6.90667C5.68667 7.12667 5.89334 7.41334 6.18667 7.76C6.48667 8.10667 6.80667 8.46 7.15334 8.81334C7.51334 9.16667 7.86 9.49334 8.21334 9.79334C8.56 10.0867 8.84667 10.2867 9.07334 10.4067C9.10667 10.42 9.14667 10.44 9.19334 10.46C9.24667 10.48 9.3 10.4867 9.36 10.4867C9.47334 10.4867 9.56 10.4467 9.63334 10.3733L10.14 9.87334C10.3067 9.70667 10.4667 9.58 10.62 9.5C10.7733 9.40667 10.9267 9.36 11.0933 9.36C11.22 9.36 11.3533 9.38667 11.5 9.44667C11.6467 9.50667 11.8 9.59334 11.9667 9.70667L14.1733 11.2733C14.3467 11.3933 14.4667 11.5333 14.54 11.7C14.6067 11.8667 14.6467 12.0333 14.6467 12.22Z" stroke="black" stroke-miterlimit="10" />
+            </svg>
+          </div>
+          <a href="tel:+79097761595" class="contact__link">+7 (909) 776-15-95</a>
+        </div>
+        <div class="contact">
+          <div class="contact__icon">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3333 5L9.24666 6.66667C8.55999 7.21333 7.43333 7.21333 6.74666 6.66667L4.66666 5M11.3333 12.6667H4.66667C2.66667 12.6667 1.33334 11.6667 1.33334 9.33333V4.66667C1.33334 2.33333 2.66667 1.33333 4.66667 1.33333H11.3333C13.3333 1.33333 14.6667 2.33333 14.6667 4.66667V9.33333C14.6667 11.6667 13.3333 12.6667 11.3333 12.6667Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <a href="mailto:print-a39@yandex.ru" class="contact__link">print-a39@yandex.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/virtual-select.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>
