@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let burger = document.querySelector('.js-burger')
-  burger.addEventListener('click', function () {
-    this.closest('.header').classList.toggle('active');
+  let burger = document.querySelectorAll('.js-burger')
+  burger.forEach(burger => {
+    burger.addEventListener('click', function () {
+      this.closest('.header').classList.toggle('active');
+    });
+  });
+
+  let overlay = document.querySelector('.overlay')
+  overlay.addEventListener('click', function () {
+    this.closest('.header').classList.remove('active');
   });
 
   new Swiper('.js-banner-slider', {
