@@ -2263,27 +2263,17 @@ a.breadcrumbs__item:hover span {
     grid-template-columns: 1fr;
   }
 
-  .input {
-    font-size: 12px;
+  .select__dropdowm {
+    padding: 10px 0;
   }
 
-  .input__title {
-    font-size: 12px;
-    line-height: 14px;
-    top: -7px;
+  .select__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .select__arrow svg {
     height: 8px;
-  }
-
-  .select {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .select.selected .select__placeholder {
-    top: -7px;
   }
 }
 
