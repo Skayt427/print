@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       el: '.swiper-pagination',
       clickable: true,
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   })
 
   let body = document.querySelector('body');
@@ -48,6 +52,36 @@ document.addEventListener("DOMContentLoaded", function () {
       modalBg.addEventListener('click', function () {
         this.closest('.modal').classList.remove('active');
         body.classList.remove('noscroll');
+      });
+    });
+  };
+
+  let select = document.querySelectorAll('.js-select')
+  if (select) {
+    select.forEach(select => {
+      let selectValue = select.querySelector('.js-select-value');
+      let selectTop = select.querySelector('.js-select-top');
+      let selectInput = select.querySelector('.js-select-input');
+      let selectItems = select.querySelectorAll('.js-select-item');
+
+      selectTop.addEventListener('click', function () {
+        select.classList.toggle('open');
+      });
+
+      selectItems.forEach(selectItem => {
+        selectItem.addEventListener('click', function () {
+          let itemValue = this.getAttribute('data-value');
+          let itemText = this.textContent;
+          select.classList.add('selected');
+          select.classList.remove('open');
+          let selectItemActive = select.querySelector('.js-select-item.active');
+          if (selectItemActive) {
+            selectItemActive.classList.remove('active');
+          };
+          this.classList.add('active');
+          selectInput.value = itemValue;
+          selectValue.innerHTML = itemText;
+        });
       });
     });
   };

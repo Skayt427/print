@@ -4,27 +4,48 @@
 
 <section class="swiper banner js-banner-slider">
   <div class="swiper-wrapper">
-    <div class="swiper-slide banner__slide" style="background-image: url('img/banner-1.jpg');">
+    <div class="swiper-slide banner__slide">
+      <div class="banner__img banner__img_desktop" style="background-image: url('img/banner-1.jpg');"></div>
+      <div class="banner__img banner__img_mobile" style="background-image: url('img/about-1.jpg');"></div>
       <div class="container banner__wrapper">
         <h1 class="banner__title">
           ПРОИЗВОДСТВО <br> САМОКЛЕЯЩЕЙСЯ ЭТИКЕТКИ
         </h1>
       </div>
     </div>
-    <div class="swiper-slide banner__slide" style="background-image: url('img/banner-1.jpg');">
+    <div class="swiper-slide banner__slide">
+      <div class="banner__img banner__img_desktop" style="background-image: url('img/banner-1.jpg');"></div>
+      <div class="banner__img banner__img_mobile" style="background-image: url('img/about-1.jpg');"></div>
       <div class="container banner__wrapper">
         <h2 class="banner__title">
           Заголовок
         </h2>
       </div>
     </div>
-    <div class="swiper-slide banner__slide" style="background-image: url('img/banner-1.jpg');">
+    <div class="swiper-slide banner__slide">
+      <div class="banner__img banner__img_desktop" style="background-image: url('img/banner-1.jpg');"></div>
+      <div class="banner__img banner__img_mobile" style="background-image: url('img/about-1.jpg');"></div>
       <div class="container banner__wrapper">
         <h3 class="banner__title">
           Заголовок
         </h3>
       </div>
     </div>
+  </div>
+
+  <div class="swiper-button-prev banner__arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+      <g fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 30 L8 16 20 2" />
+      </g>
+    </svg>
+  </div>
+  <div class="swiper-button-next banner__arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+      <g fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 30 L24 16 12 2" />
+      </g>
+    </svg>
   </div>
 
   <div class="swiper-pagination"></div>
@@ -178,23 +199,26 @@
           <input type="number" class="input" placeholder="Высота, мм. *" required>
           <div class="input__title">Высота, мм. *</div>
         </label>
-        <div class="select">
-          <div class="input__title">Материал*</div>
+
+        <div class="select js-select">
+          <input type="hidden" class="js-select-input">
+          <div class="select__top js-select-top">
+            <div class="select__placeholder">Материал*</div>
+            <div class="select__value js-select-value"></div>
+            <div class="select__arrow">
+              <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29832e-06 1.48542L7.07108 8.55649L8.48529 9.9707L9.8995 8.55649L16.9706 1.48542L15.5564 0.0712087L8.48529 7.14228L1.41422 0.0712084L9.29832e-06 1.48542Z" fill="#737373" />
+              </svg>
+            </div>
+          </div>
+
+          <ul class="select__dropdowm">
+            <li class="select__item js-select-item" data-value="Значение 1">Материал 1</li>
+            <li class="select__item js-select-item" data-value="Значение 2">Материал 2</li>
+            <li class="select__item js-select-item" data-value="Значение 3">Материал 3</li>
+          </ul>
         </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            VirtualSelect.init({
-              ele: '.select',
-              options: [
-                { label: 'Опция 1', value: '' },
-                { label: 'Опция 2', value: '' },
-                { label: 'Опция 3', value: '' },
-              ],
-              placeholder: 'Материал*',
-              hideClearButton: true,
-            });
-          });
-        </script>
+
         <label class="label">
           <input type="number" class="input" placeholder="Кол-во рулонов">
           <div class="input__title">Кол-во рулонов</div>
